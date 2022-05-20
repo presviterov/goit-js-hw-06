@@ -19,7 +19,7 @@ const galleryList = document.querySelector(".gallery");
 
 //Используй массив объектов images для создания элементов <img> вложенных в <li>. Для создания разметки используй шаблонные строки и метод insertAdjacentHTML().
  const markup = images
-  .map((image) => `<img class="img item" src="${image.url}" alt="${image.alt}">`)
+  .map((image) => `<li class="item"><img src="${image.url}" alt="${image.alt}"></li>`)
   .join("");
 galleryList.insertAdjacentHTML("beforeend", markup);
 
